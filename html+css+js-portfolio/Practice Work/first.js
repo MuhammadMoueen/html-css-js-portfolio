@@ -85,11 +85,18 @@
 // }
 // console.log(i);
 
-let student = {
-    user    : "Moueen",
-    rollNo  : 1131,
-    isPass  : true
+// let student = {
+//     user    : "Moueen",
+//     rollNo  : 1131,
+//     isPass  : true
+// }
+// for ( let key in student){
+//     console.log("key is:",key , "Value:" , student[key]);
+// }
+
+for(let i = 1; i <= 100; i++){
+    if( i % 2 == 0){
+        console.log(i);
+    }
 }
-for ( let key in student){
-    console.log("key is:",key , "Value:" , student[key]);
-}
+    console.log("All Even Number Is Printed.")
