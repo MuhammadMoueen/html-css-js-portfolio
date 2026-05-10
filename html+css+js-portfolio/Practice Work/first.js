@@ -94,9 +94,20 @@
 //     console.log("key is:",key , "Value:" , student[key]);
 // }
 
-for(let i = 1; i <= 100; i++){
-    if( i % 2 == 0){
-        console.log(i);
-    }
-}
-    console.log("All Even Number Is Printed.")
+// Print 0 to 100 even number:
+
+// for(let i = 0; i <= 100; i++){
+//     if( i % 2 == 0){
+//         console.log(i);
+//     }
+// }
+//     console.log("All Even Number Is Printed.")
+
+//Guessing Game:
+
+let GuessNum = 25;
+let UserNum  = Number(prompt("Guess the number:"));
+   while(GuessNum != UserNum){
+      UserNum = Number(prompt("You guess the wrong number , try again:"));
+   }
+   console.log("Congratulations, You Win The Game.")
