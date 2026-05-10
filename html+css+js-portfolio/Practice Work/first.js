@@ -57,23 +57,39 @@
 // }
 
 
-let marks = Number(prompt("Enter The Marks Of Student:"));
+// let marks = Number(prompt("Enter The Marks Of Student:"));
 
-if( marks <= 100 && marks >= 80){
-    console.log("Student Grade A");
+// if( marks <= 100 && marks >= 80){
+//     console.log("Student Grade A");
+// }
+// else if( marks <= 89 && marks >= 70){
+//     console.log("Student Grade B");
+// }
+// else if( marks <= 69 && marks >= 60){
+//     console.log("Student Grade C");
+// }
+// else if( marks <= 59 && marks >= 50){
+//     console.log("Student Grade D");
+// }
+// else if( marks <= 49){
+//     console.log("Student Grade F");
+// }
+// else{
+//     console.log("Invalid Input.")
+// }
+
+// let i = 6
+
+// for(let i = 0 ; i <= 5; i++ ){
+//     console.log("i =", i);
+// }
+// console.log(i);
+
+let student = {
+    user    : "Moueen",
+    rollNo  : 1131,
+    isPass  : true
 }
-else if( marks <= 89 && marks >= 70){
-    console.log("Student Grade B");
-}
-else if( marks <= 69 && marks >= 60){
-    console.log("Student Grade C");
-}
-else if( marks <= 59 && marks >= 50){
-    console.log("Student Grade D");
-}
-else if( marks <= 49){
-    console.log("Student Grade F");
-}
-else{
-    console.log("Invalid Input.")
+for ( let key in student){
+    console.log("key is:",key , "Value:" , student[key]);
 }
