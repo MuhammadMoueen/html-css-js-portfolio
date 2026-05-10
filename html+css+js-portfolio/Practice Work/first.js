@@ -105,9 +105,28 @@
 
 //Guessing Game:
 
-let GuessNum = 25;
-let UserNum  = Number(prompt("Guess the number:"));
-   while(GuessNum != UserNum){
-      UserNum = Number(prompt("You guess the wrong number , try again:"));
-   }
-   console.log("Congratulations, You Win The Game.")
+// let GuessNum = 25;
+// let UserNum  = Number(prompt("Guess the number:"));
+//    while(GuessNum != UserNum){
+//       UserNum = Number(prompt("You guess the wrong number , try again:"));
+//    }
+//    console.log("Congratulations, You Win The Game.")
+
+//Strings 
+// let str = "Moueen";
+// str1 = str.length
+// console.log(str1);
+// str2 = str[0]
+// console.log(str2);
+
+// Temp literal
+// let obj={
+//     item: pen,
+//     price: 10,
+// }
+// let output = `The cost of ${obj.item} is ${obj.price}`;
+// console.log(output);
+
+let name = "Moueen";
+
+console.log(`My name is ${name}`);
