@@ -253,14 +253,22 @@
 
 
 let n = prompt("Enter The number:");
+
 let arr = [];
-for (let i = 0 ; i <= n ; i++){
-    arr[i-1] = i;
+
+for (let i = 1; i <= n; i++){
+    arr.push(i);
 }
+
 console.log(arr);
 
-// let product = arr.reduce((pre , curr) => {
-//     return pre * curr ;
-// })
+let sum = arr.reduce((pre, curr) => {
+    return pre + curr;
+});
+console.log(`Sum : ${sum}`);
 
-// console.log(product);
+let product = arr.reduce((pre, curr) => {
+    return pre * curr;
+});
+
+console.log(product);
