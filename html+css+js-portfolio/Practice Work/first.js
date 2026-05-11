@@ -127,6 +127,118 @@
 // let output = `The cost of ${obj.item} is ${obj.price}`;
 // console.log(output);
 
-let name = "Moueen";
+// let name = "Moueen";
 
-console.log(`My name is ${name}`);
+// console.log(`My name is ${name}`);
+
+
+// let str = "Moueen";
+
+// let newStr = str.toUpperCase();
+
+// console.log(newStr);
+
+// let str = "Moueen";
+//  console.log(str[0]);
+
+// Practice Question:
+
+// let UserInput = prompt("Enter Your Full Name:")
+// UserInput = UserInput.toLowerCase();
+// UserInput = UserInput.replaceAll(" ", "");
+// let str = UserInput.length
+// let str_len = UserInput.concat(str)
+// let UserName = "@"+ str_len;
+// console.log(UserName);
+
+// Practice Question:
+
+// let marks = [85 , 97 , 44 , 37 ,76 , 60]
+// sum = 85 + 97 + 44 + 37 + 76 + 60;
+// average = sum / marks.length;
+// console.log(`Average Marks of the student is :{average}`);
+
+// Practice Question:
+
+// let items = [250 , 645 , 300 , 900 , 50];
+// let NewItems = [];
+// for (let item of items){
+//   let  final_price = item - (item / 100 * 10);
+//     NewItems.push(final_price);
+// }
+// console.log(`Final Price of the items are shows: ${NewItems}`);
+
+
+
+// let items = [250 , 645 , 300 , 900 , 50];
+// for (let i = 0; i < items.length; i++){
+//     items = items[0] - (items[0] / 100 * 10);
+// }
+// console.log(`Final Price of the items are shows: ${items}`);
+
+// let items = [250, 645, 300, 900, 50];
+
+// for (let i = 0; i < items.length; i++){
+
+//     items[i] = items[i] - (items[i] / 100 * 10);
+
+// }
+
+// console.log(`Final Prices are: ${items}`);
+
+// Practice Question:
+
+// let companies = ["Bloomberge", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+// let remove_first_company = companies.shift();
+// let replace_company = companies.splice(1,1,"Ola");
+// let Add_company =companies.push("Amazon");
+// console.log(`Update companies data: ${companies}`);
+  
+
+//funation
+
+// const MulNum = (a , b) => {
+//     console.log(a * b);
+// }
+
+// MulNum(2,3);
+
+
+
+// Practice 
+// function countVowels(str){
+
+//     let count = 0;
+
+//     for(let char of str){
+
+//         if(
+//             char === "a" ||
+//             char === "e" ||
+//             char === "i" ||
+//             char === "o" ||
+//             char === "u"
+//         ){
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+//Function Defination => parameter
+// 
+
+
+//Practice Question 
+
+let arr = [87 , 93 , 64 , 99 , 87 , 65 , 90 , 23]
+
+arr.filter((val) => {
+    if (val >= 90){
+        let newArr = val;
+    }
+    console.log(`The Score is not upto 90 ${val}`);
+});
+console.log(newArr);
