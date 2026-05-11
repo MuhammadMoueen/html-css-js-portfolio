@@ -235,10 +235,9 @@
 
 let arr = [87 , 93 , 64 , 99 , 87 , 65 , 90 , 23]
 
-arr.filter((val) => {
-    if (val >= 90){
-        let newArr = val;
-    }
+let newArr = arr.filter((val) => {
+    return val >= 90
     console.log(`The Score is not upto 90 ${val}`);
 });
 console.log(newArr);
+console.log(arr);
