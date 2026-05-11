@@ -233,11 +233,34 @@
 
 //Practice Question 
 
-let arr = [87 , 93 , 64 , 99 , 87 , 65 , 90 , 23]
+// let arr = [87 , 93 , 64 , 99 , 87 , 65 , 90 , 23]
 
-let newArr = arr.filter((val) => {
-    return val >= 90
-    console.log(`The Score is not upto 90 ${val}`);
-});
-console.log(newArr);
+// let newArr = arr.filter((val) => {
+//     return val >= 90
+//     console.log(`The Score is not upto 90 ${val}`);
+// });
+// console.log(newArr);
+// console.log(arr);
+
+//Practice Question 
+// let input = prompt("Enter numbers separated by commas:");
+// let arr = input.split(",").map(Number);
+
+// let sum = arr.reduce((pre, curr) => {
+//     return pre + curr;
+// });
+// console.log(sum);
+
+
+let n = prompt("Enter The number:");
+let arr = [];
+for (let i = 0 ; i <= n ; i++){
+    arr[i-1] = i;
+}
 console.log(arr);
+
+// let product = arr.reduce((pre , curr) => {
+//     return pre * curr ;
+// })
+
+// console.log(product);
