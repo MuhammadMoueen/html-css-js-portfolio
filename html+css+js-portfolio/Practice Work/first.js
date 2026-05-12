@@ -252,23 +252,48 @@
 // console.log(sum);
 
 
-let n = prompt("Enter The number:");
+// let n = prompt("Enter The number:");
 
-let arr = [];
+// let arr = [];
 
-for (let i = 1; i <= n; i++){
-    arr.push(i);
-}
+// for (let i = 1; i <= n; i++){
+//     arr.push(i);
+// }
 
-console.log(arr);
+// console.log(arr);
 
-let sum = arr.reduce((pre, curr) => {
-    return pre + curr;
-});
-console.log(`Sum : ${sum}`);
+// let sum = arr.reduce((pre, curr) => {
+//     return pre + curr;
+// });
+// console.log(`Sum : ${sum}`);
 
-let product = arr.reduce((pre, curr) => {
-    return pre * curr;
-});
+// let product = arr.reduce((pre, curr) => {
+//     return pre * curr;
+// });
 
-console.log(product);
+// console.log(product);
+
+
+//DOM
+
+// let element = document.querySelector("#heading");
+
+// console.log(element.tagName);
+
+// let element = document.querySelector("h1");
+
+// console.log(element.innerText);
+
+// let h = document.querySelector(".heading");
+
+// console.log(h.tagName);
+
+// console.log(h.innerText);
+
+// console.log(h.innerHTML);
+
+// console.log(h.textContent);
+
+
+let h = document.getElementById("h1");
+console.log(h);
