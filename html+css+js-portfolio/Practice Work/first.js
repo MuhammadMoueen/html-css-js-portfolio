@@ -301,6 +301,44 @@
 // console.log(h);
 
 // By Class selector:
-let p = document.getElementByClass("para");
-console.dir(p);
-console.log(p);
+// let p = document.getElementsByClassName("para");
+// console.dir(p);
+// console.log(p);
+
+// By tags selector:
+// let t = document.getElementsByTagName("button");
+// console.dir(t);
+// console.log(t);
+
+// By qurey  selector:
+// For Para
+
+// let p = document.querySelector(".para");
+// console.dir(p);
+// console.log(p);
+// // For h
+
+// let h = document.querySelector("#h1");
+// console.dir(h);
+// console.log(h.innerHTML);
+// //For tags
+
+// let t = document.querySelector("button");
+// console.dir(t);
+// console.log(t);
+
+
+// let btn = document.querySelector("button");
+
+// btn.innerText = "Send";
+
+// console.log(btn.innerText);
+
+
+let h = document.querySelector("h1");
+
+console.log(h);
+
+console.log(h.innerText);
+
+console.log(h.innerHTML);
