@@ -295,5 +295,12 @@
 // console.log(h.textContent);
 
 
-let h = document.getElementById("h1");
-console.log(h);
+// By Id selector:
+// let h = document.getElementById("h1");
+// console.dir(h);
+// console.log(h);
+
+// By Class selector:
+let p = document.getElementByClass("para");
+console.dir(p);
+console.log(p);
