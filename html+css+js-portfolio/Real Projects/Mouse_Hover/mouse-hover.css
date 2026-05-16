@@ -1,0 +1,20 @@
+body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+.card{
+      width: 220px;
+      height: 220px;
+      background-color: blue;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      border-radius: 12px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
