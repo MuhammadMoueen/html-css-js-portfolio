@@ -62,6 +62,11 @@ img{
     width: 150px;
 }
 
+.score-you:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .score-computer{
     background-color: #f44336;
     color: white;
@@ -70,8 +75,13 @@ img{
     line-height: 50px;    
     border: 1px solid #f44336;
     border-radius: 5px;
-    width: 150px;    
+    width: 200px;    
 
+}
+
+.score-computer:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .result{
@@ -86,4 +96,16 @@ img{
     margin: 50px auto;
     border: 2px solid #333;
     border-radius: 5px;
+
+    animation: popup 1s ease infinite alternate;
+}
+
+@keyframes popup{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.08);
+    }
 }
