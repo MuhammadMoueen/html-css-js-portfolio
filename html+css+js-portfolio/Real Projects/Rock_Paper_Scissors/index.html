@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors | Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- This game uses plain HTML, CSS, and JavaScript only. No Tailwind is used here. -->
     <header>
+        <!-- Main game title -->
         <h1>Rock Paper Scissors</h1>
     </header>
+
     <main>
-     <section  class="choices">
-        <div class="choice" id="rock">
-         <img src="images/rock.png" alt="Rock">   
-        </div>
-        <div class="choice" id="paper">
-         <img src="images/paper.png" alt="Paper">
-        </div>
-        <div class="choice" id="scissors">
-         <img src="images/scissors.png" alt="Scissors">
-        </div>
-     </section>
-     <section class="score-board">
-        <div class="score-you">
-        <p> You: <span id="player-score">0</span></p>    
-        </div>
-        <div class="score-computer">
-        <p>Computer: <span id="computer-score">0</span></p>
-        </div>
-     </section>
-        <section class="result">
-            <p id="result-message">Make your Move!</p>
+        <!-- Current round counter -->
+        <section class="round-box" aria-label="Current round">
+            Round: <span id="round">1</span> / 10
         </section>
+
+        <!-- Clickable player choices -->
+        <section class="choices" aria-label="Game choices">
+            <button class="choice" id="rock" type="button" aria-label="Rock">
+                <img src="images/rock.png" alt="Rock">
+            </button>
+            <button class="choice" id="paper" type="button" aria-label="Paper">
+                <img src="images/paper.png" alt="Paper">
+            </button>
+            <button class="choice" id="scissors" type="button" aria-label="Scissors">
+                <img src="images/scissors.png" alt="Scissors">
+            </button>
+        </section>
+
+        <!-- Score display for player and computer -->
+        <section class="score-board" aria-label="Score board">
+            <div class="score-you">
+                You: <span id="user-score">0</span>
+            </div>
+            <div class="score-comp">
+                Computer: <span id="comp-score">0</span>
+            </div>
+        </section>
+
+        <!-- Message area that updates after each move -->
+        <section class="result" id="result-message" aria-live="polite">
+            Make Your Move!
+        </section>
+    </main>
+
+    <!-- Final screen shown at the end of the match -->
+    <aside class="final-result hide" id="final-result" role="dialog" aria-modal="true" aria-labelledby="final-text">
+        <h2 id="final-text"></h2>
+        <button id="restart-btn" type="button">Play Again</button>
+    </aside>
+
+    <!-- JavaScript is loaded at the end so HTML elements exist first -->
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
