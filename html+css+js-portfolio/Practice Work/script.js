@@ -46,3 +46,18 @@
 //    btn.style.backgroundColor = "red";
 //    console.log("Background color is Changed!")
 // }
+
+
+const emplyees ={
+    calTax(){
+        console.log("Tax is Calculated!");
+    }
+};
+
+const Moueen = {
+    salary: 5000,
+}
+
+Moueen.__proto__ = emplyees;
+
+Moueen.calTax();
