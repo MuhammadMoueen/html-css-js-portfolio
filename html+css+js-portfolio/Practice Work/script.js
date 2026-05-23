@@ -48,16 +48,24 @@
 // }
 
 
-const emplyees ={
-    calTax(){
-        console.log("Tax is Calculated!");
-    }
-};
+// const emplyees ={
+//     calTax(){
+//         console.log("Tax is Calculated!");
+//     }
+// };
 
-const Moueen = {
-    salary: 5000,
+// const Moueen = {
+//     salary: 5000,
+// }
+
+// Moueen.__proto__ = emplyees;
+
+// Moueen.calTax();
+
+
+const student = {
+   name: "Moueen",
+   printName() {
+      console.log(this.name);
+   }
 }
-
-Moueen.__proto__ = emplyees;
-
-Moueen.calTax();
