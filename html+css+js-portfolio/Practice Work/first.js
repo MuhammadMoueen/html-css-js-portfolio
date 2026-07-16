@@ -335,10 +335,18 @@
 // console.log(btn.innerText);
 
 
-let h = document.querySelector("h1");
+// let h = document.querySelector("h1");
 
-console.log(h);
+// console.log(h);
 
-console.log(h.innerText);
+// console.log(h.innerText);
 
-console.log(h.innerHTML);
+// console.log(h.innerHTML);
+
+
+//Promises
+
+
+let promise = new Promise((resolve, reject) => {
+    console.log("i Am Promise");
+});
