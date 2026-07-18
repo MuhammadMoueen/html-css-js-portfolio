@@ -347,6 +347,21 @@
 //Promises
 
 
-let promise = new Promise((resolve, reject) => {
-    console.log("i Am Promise");
-});
+// let promise = new Promise((resolve, reject) => {
+//     console.log("i Am Promise");
+//     // resolve("Promise is resolved");
+//     reject("Promise is Rejected");
+// });
+
+
+function login(username, password) {
+    return new Promise((resolve, reject) => {
+
+        if (username === "Moueen" && password === "1234") {
+            resolve("Login Successful");
+        } else {
+            reject("Invalid Credentials");
+        }
+
+    });
+}
